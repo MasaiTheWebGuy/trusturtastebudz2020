@@ -1,0 +1,96 @@
+.sidemenu{
+    height: 80%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background: white;
+    box-shadow: -4px -4px 20px black,
+    -4px 0 30px;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(60px);
+}
+
+.sidemenu.active{
+    width: 350px;
+}
+
+.ordered-items{
+    width: 100%;
+    color: black;
+    display: flex;
+    flex-direction: inherit;
+}
+
+.ordered-items .pic{
+    width: 100%;
+}
+
+#item{
+    padding: 20px;
+    display: flex;
+    border-bottom: 1px solid black;
+    overflow: auto;
+}
+
+#item button{
+    background-color: #DEA0B7;
+    cursor: pointer;
+}
+
+#item #pic{
+    width: 50%;
+}
+
+#item img{
+    max-width: 100%;
+}
+
+#item .name{
+    width: 40%;
+    
+}
+
+#item .total{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+#item .total h3{
+    margin-bottom: 140px;
+}
+
+.checkout{
+    height: 30px;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.checkout button{
+    padding: 10px 20px;
+    font-size: 1em;
+    margin-bottom: 15px;
+    cursor: pointer;
+    background-color: #DEA0B7;
+    
+}
+
+.checkout button:hover{
+    background-color: #DEA0B7;
+    transition: 3ms;
+}
+
+.checkout a{
+    cursor: pointer;
+    font-size: 1em;
+    text-decoration: none;
+    color: black;
+}

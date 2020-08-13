@@ -1,0 +1,57 @@
+nav{
+    width: 100%;
+    background: #EB1C24;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ttb{
+    max-width: 50%;
+}
+
+h3{
+    text-align: center;
+}
+
+img{
+    max-width: 100%;
+}
+
+.active{
+    color: white;
+}
+
+.logo{
+    width: 6em;
+}
+
+ul{
+    display: none;
+}
+
+ul li{
+    list-style: none;
+    margin: 20px 0;
+    font-size: 30px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.line{
+    width: 30px;
+    height: 5px;
+    background: black;
+    margin: 5px;
+}
+
+.ttb{
+    max-width: 100%;
+    cursor: pointer;
+}
+
+.order{
+    cursor: pointer;
+}
