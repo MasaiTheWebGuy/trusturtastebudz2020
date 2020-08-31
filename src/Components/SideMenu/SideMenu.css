@@ -94,3 +94,7 @@
     text-decoration: none;
     color: black;
 }
+
+.keep-shop, .purchase-btn{
+    width: 100%
+}

@@ -1,8 +1,18 @@
-nav{
+.topNav{
     width: 100%;
     background: #EB1C24;
     display: flex;
     justify-content: space-between;
+}
+
+.sticky{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+
+.topNav a{
+    text-decoration: none;
 }
 
 .ttb{

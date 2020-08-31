@@ -7,7 +7,9 @@ export default class Menu extends Component {
     constructor(){
         super()
         this.state = {
-          food: []
+          food: [],
+          isOpen: false,
+          order: {}
         }
       }
     
@@ -21,8 +23,8 @@ export default class Menu extends Component {
 
     render() {
         return (
-            <div>
-                <div className="main-menu">
+            <div className="main-menu">
+                <div >
                     <img src="/Images/TYTBsvg.svg" alt="" className="form-logo" />
                     <MenuList food={this.state.food}/>
                 </div>

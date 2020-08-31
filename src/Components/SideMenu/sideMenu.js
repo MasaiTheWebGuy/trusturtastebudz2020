@@ -1,18 +1,28 @@
 import React, { Component } from 'react'
+import './SideMenu.css'
 
 export default class sideMenu extends Component {
+
+
+    closeOrder = () =>{
+        var menu = document.getElementById('sidemenu')
+        menu.classList.toggle("active")
+    }
+
+
     render() {
+
         return (
-            <div class="sidemenu" id="sidemenu">
-                <span class="close" onclick="closeNav()">X</span>
-                <div class="ordered-items"></div>
-                <div class="cart-total">
-                    <strong class="cart-total-title">Total</strong>
-                    <span class="cart-total-price">$0</span>
+            <div className="sidemenu" id="sidemenu">
+                <span className="close" onClick={this.closeOrder}>X</span>
+                <div className="ordered-items"></div>
+                <div className="cart-total">
+                    <strong className="cart-total-title">Total</strong>
+                    <span className="cart-total-price">$0</span>
                 </div>
-                <div class="checkout">
-                    <button class="purchase-btn">Checkout</button>
-                    <button>KEEP SHOPPING</button>
+                <div className="checkout">
+                    <button className="purchase-btn">Checkout</button>
+                    <button className="keep-shop">KEEP SHOPPING</button>
                 </div>
             </div>
         )

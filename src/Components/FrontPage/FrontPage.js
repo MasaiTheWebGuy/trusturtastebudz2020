@@ -7,8 +7,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"
 export default class FrontPage extends Component {
     render() {
         return (
-            <div className="top">
-                <Carousel showArrows={false} showThumbs={false} showIndicators={false} stopOnHover={false} autoPlay={true} showStatus={false}>
+            <div className="topMain">
+                <Carousel showArrows={false} showThumbs={false} showIndicators={false} stopOnHover={false} autoPlay={true} showStatus={false} infiniteLoop={true}>
                     <div>
                         <img src="/Images/IMG-4132.jpg" alt="img1" />
                     </div>
@@ -26,7 +26,7 @@ export default class FrontPage extends Component {
                         <div className="mainImg">
                             <img src="/Images/Logo.svg" alt="" />
                             <Link to="/home">
-                             <button className="button">Trust</button>
+                             <button className="buttonMain">Trust</button>
                             </Link> 
                         </div>
                         
