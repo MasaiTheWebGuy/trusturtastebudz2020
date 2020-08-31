@@ -12,7 +12,10 @@ const MenuList = ({ food }) => {
                     {
                         food.map((foods, i) => {
                             return (
-                                // <Modal>  
+                                // <Modal
+                                // className="modal"
+                                // isOpen
+                                // >  
                                     <MenuItems 
                                     key={i}
                                     index={i}
