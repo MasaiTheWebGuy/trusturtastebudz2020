@@ -1,7 +1,7 @@
 import React from 'react'
 import MenuItems from '../MenuItems/MenuItems'
 import './MenuList.css'
-import Modal from 'react-modal'
+
 
 const MenuList = ({ food }) => {
 
@@ -12,10 +12,7 @@ const MenuList = ({ food }) => {
                     {
                         food.map((foods, i) => {
                             return (
-                                // <Modal
-                                // className="modal"
-                                // isOpen
-                                // >  
+                                
                                     <MenuItems 
                                     key={i}
                                     index={i}
@@ -25,7 +22,6 @@ const MenuList = ({ food }) => {
                                     price={food[i].price}
                                     image={food[i].image}
                                     />
-                                // </Modal>
                             )
                         })
                     }

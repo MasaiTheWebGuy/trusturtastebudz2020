@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import MenuList from '../MenuList/MenuList'
 import './Menu.css'
+import Modal from 'react-modal'
 
 export default class Menu extends Component {
 
@@ -17,7 +18,7 @@ export default class Menu extends Component {
     fetch('http://localhost:3001/menu')
         .then(results => { return results.json()
         })
-        .then(foods => { this.setState({ food: foods })
+        .then(food => { this.setState({ food: food })
         })
     } 
 
@@ -26,7 +27,13 @@ export default class Menu extends Component {
             <div className="main-menu">
                 <div >
                     <img src="/Images/TYTBsvg.svg" alt="" className="form-logo" />
-                    <MenuList food={this.state.food}/>
+                    <Modal
+                    className="modal"
+                    />
+                    <MenuList 
+                    food={this.state.food}
+                    isOpen={this.state.isOpen}
+                    />
                 </div>
             </div>
         )
