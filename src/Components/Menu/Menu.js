@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 import MenuList from '../MenuList/MenuList'
 import './Menu.css'
 import Modal from 'react-modal'
+import ModalPopUp from '../ModalPopUp/ModalPopUp'
+
+Modal.setAppElement('#root');
 
 export default class Menu extends Component {
 
@@ -9,7 +12,7 @@ export default class Menu extends Component {
         super()
         this.state = {
           food: [],
-          isOpen: false,
+          isOpen: true,
           order: {}
         }
       }
@@ -29,10 +32,12 @@ export default class Menu extends Component {
                     <img src="/Images/TYTBsvg.svg" alt="" className="form-logo" />
                     <Modal
                     className="modal"
-                    />
+                    isOpen={this.state.isOpen}
+                    >
+                    <ModalPopUp />    
+                    </Modal>
                     <MenuList 
                     food={this.state.food}
-                    isOpen={this.state.isOpen}
                     />
                 </div>
             </div>
