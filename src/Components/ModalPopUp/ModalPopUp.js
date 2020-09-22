@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
-import './ModalPopUp.css'
+import React from 'react'
 
-export default class ModalPopUp extends Component {
-    render() {
+
+    const ModalPopUp = ({ name, price, image }) => {
+
         return (
             
                 <div id="foodModal" className="modal">
@@ -11,11 +11,11 @@ export default class ModalPopUp extends Component {
                         <span className="close">&times;</span>
                     <div className="menu">
                         <div className="modal-pic">
-                            <img src="/Images/IMG_12801.jpg" alt="" className="food-pic" />
+                            <img src={image} alt="" className="food-pic" />
                         </div>
                         <div className="modal-food">
-                            <h3 className="food-name">General Tso w/ Fried Rice</h3>
-                            <span className="cart-price">$18</span>
+                            <h3 className="food-name">{name}</h3>
+                            <span className="cart-price">{price}</span>
                         </div>
                         <div className="total">
                             <h3>Quantity:</h3>
@@ -30,4 +30,5 @@ export default class ModalPopUp extends Component {
                 </div>
         )
     }
-}
+
+    export default ModalPopUp

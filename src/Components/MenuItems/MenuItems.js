@@ -1,12 +1,12 @@
 import React from 'react'
 import './MenuItems.css'
 
-const MenuItems = ({ name, description, price, image, }) => {
+const MenuItems = ({ name, description, price, image, index }) => {
     
         return (
             <div>
                 <div className="food"
-                // onClick={this.openModal }
+                onClick={this.openModal}
                 >
                     <div>
                         <img src={image} alt="" className="food-pic" />
@@ -17,6 +17,7 @@ const MenuItems = ({ name, description, price, image, }) => {
                         <span className="food-price row">${price}</span>
                     </div>
                 </div>
+                {console.log(index)}
             </div>
         )
 }

@@ -12,8 +12,9 @@ export default class Menu extends Component {
         super()
         this.state = {
           food: [],
-          isOpen: true,
-          order: {}
+          isOpen: false,
+          order: {},
+          foodModal: {}
         }
       }
     
@@ -23,7 +24,16 @@ export default class Menu extends Component {
         })
         .then(food => { this.setState({ food: food })
         })
-    } 
+    }
+    
+    openModal = (key) => {
+        const foodModal = { ...this.state.foodModal };
+        foodModal[key] = key;
+        this.setState({ foodModal });
+        let isOpen = { ...this.state.isOpen };
+        isOpen = true;
+        this.setState({ isOpen });
+      };
 
     render() {
         return (

@@ -16,6 +16,7 @@ const MenuList = ({ food }) => {
                                     <MenuItems 
                                     key={i}
                                     index={i}
+                                    openModal={this.props.openModal}
                                     id={food[i].id} 
                                     name={food[i].name} 
                                     description={food[i].description}
@@ -25,6 +26,8 @@ const MenuList = ({ food }) => {
                             )
                         })
                     }
+
+                    {console.log(MenuItems.index)}
             </div>
     )
 }
