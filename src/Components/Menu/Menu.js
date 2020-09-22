@@ -48,6 +48,7 @@ export default class Menu extends Component {
                     </Modal>
                     <MenuList 
                     food={this.state.food}
+                    openModal={this.openModal}
                     />
                 </div>
             </div>

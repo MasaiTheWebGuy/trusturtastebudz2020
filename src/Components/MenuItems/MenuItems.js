@@ -6,7 +6,7 @@ const MenuItems = ({ name, description, price, image, index }) => {
         return (
             <div>
                 <div className="food"
-                onClick={this.openModal}
+                onClick={this.props.openModal}
                 >
                     <div>
                         <img src={image} alt="" className="food-pic" />
